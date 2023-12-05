@@ -1,7 +1,9 @@
 
 <template>
-  <navBar />
-  <RouterView />
+  <div>
+    <navBar />
+    <RouterView />
+  </div>
 </template>
  
 <script setup>
@@ -10,6 +12,13 @@ import navBar from "../src/components/NavBar.vue";
 
 
 <style>
+div {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
 /* header {
   line-height: 1.5;
   max-height: 100vh;

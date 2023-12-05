@@ -15,9 +15,6 @@ const router = useRouter();
 </script>
   
   <style>
-.navBar {
-  width: 100%;
-}
 .navBar ul {
   width: 100%;
   display: flex;
