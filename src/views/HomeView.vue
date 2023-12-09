@@ -59,4 +59,22 @@ onMounted(() => {
 </script>
 
 <style>
+.home {
+  text-align: center;
+  text-transform: capitalize;
+}
+input[type="text"] {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+  height: 30px;
+}
+input[type="submit"] {
+  background: green;
+  display: block;
+  margin: 20px auto;
+  color: white;
+  padding: 5px 15px;
+  font-size: 18px;
+}
 </style>

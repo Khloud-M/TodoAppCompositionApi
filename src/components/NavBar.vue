@@ -16,13 +16,21 @@ const router = useRouter();
   
   <style>
 .navBar ul {
-  width: 100%;
+  height: 60px;
   display: flex;
   justify-content: center;
   column-gap: 50px;
   align-items: center;
   background-color: #238f23;
   list-style: none;
+}
+ul li a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.router-link-active {
+  text-decoration: underline;
 }
 </style>
   
