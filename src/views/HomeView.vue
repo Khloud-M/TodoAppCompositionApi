@@ -16,15 +16,17 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
+import todoMixin from "../mixins/todo";
+const { setlist, todoList } = todoMixin();
 // Data
-const todoList = ref([]);
 const todoObject = ref({
   id: "",
   text: "",
   fromDate: "",
   toDate: "",
   createdAt: "",
+  iscomplate: false,
 });
 // methods
 // addlist function
@@ -40,22 +42,9 @@ const addlist = () => {
     fromDate: "",
     toDate: "",
     createdAt: "",
+    iscomplate: false,
   };
 };
-// setlocalStorage function
-const setlist = () => {
-  localStorage.setItem("todos", JSON.stringify(todoList.value));
-};
-// updates function
-const update = () => {
-  if (localStorage.getItem("todos")) {
-    todoList.value = JSON.parse(localStorage.getItem("todos"));
-  }
-};
-// hooks
-onMounted(() => {
-  update();
-});
 </script>
 
 <style>
